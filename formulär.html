@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulär</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            
+            <!-- Dokument Rubrik -->
+            <legend>Developer Job Application</legend>
+        <div class="container">
+
+            <!-- Personlig info -->
+            <form action="results.html" method="GET">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone">
+                
+                    <label for="age">Age</label>
+                    <input type="number" name="age" id="age" min="1" max="120">
+                </div>
+            
+            <!-- Textruta för biografi -->
+                <div>
+                    <label for="bio">Tell us about you're self</label>
+                    <textarea id="bio" name="bio"></textarea>
+                </div>
+
+            <!-- Checkboxar -->
+                <div>
+                    <h3>Experience</h3>
+                    <input type="checkbox" name="html/css" id="html/css">
+                    <label for="HTML/CSS">HTML & CSS</label>
+                
+                    <input type="checkbox" name="Javascript" id="Javascript">
+                    <label for="Javascript">Javascript</label>
+                    
+               
+                    <input type="checkbox" name="React" id="React">
+                    <label for="React">React</label>
+                    
+                
+                    <input type="checkbox" name="C#" id="C#">
+                    <label for="C#">C#</label>
+
+                    <input type="checkbox" name="Git" id="Git">
+                    <label for="Git">Git</label>
+                </div>
+                
+            <!-- Lösenord  -->
+                <div>
+                    <label>
+                        Password
+                        <input type="password" name="password" required>
+                    </label>
+                </div>
+            
+            <!-- Gåta -->
+            <h3>Solve the riddle</h3>
+            <p>What can you keep after giving somone?</p>
+            <input type="text" name="textruta">
+            
+            <!-- Skicka formulär  -->
+            <h3>Send form</h3>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>                 
+        </fieldset>
+    </form>
+</body>
+</html>

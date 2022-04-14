@@ -1,0 +1,68 @@
+* { 
+    font-family: sans-serif, Arial, Helvetica;  /* Text stil */
+    margin: 0;                                  /* Nollställning av marginal */
+    padding: 0;                                 /* Nollställning av padding */
+    box-sizing: border-box;                     /* border och padding innuti boxar */
+}
+body {
+    background-image: url(purple.png);          /* Bakgrundsbild */
+    background-repeat: no-repeat;               /* Repetera ej bakgrundsbild */
+}
+form {
+    margin-top: 50px;                           /* Avstånd till top */
+}
+.container {
+    margin: 20px;                               /* Marginal i Formulär */
+}
+fieldset {
+    margin: auto;                               /* Centrering av formlulär */
+    width: 35%;                                 /* Bredd i förhållande till webbläsarstorlek */
+    border-radius: 8px;                         /* Runda kanter */
+    border: 1px solid rgb(0, 0, 0);           /* Svart ram */
+    background-color: rgb(235, 235, 235);     /* Vit bakgrund */
+}
+
+legend {
+    margin-left: 10px;                           /* Avstånd till vänster */
+    padding: 2px;                                /* Yta runt text */
+    font-size: 18px;                             /* Storlek på font */
+    background-color: rgb(255, 255, 255);      /* Vit baktrund */
+    border: 1px solid rgb(0, 0, 0);            /* Ram */
+    border-radius: 7px;                          /* Runda kanter */
+}
+label {
+    display: block;                            /* Egna rader för Labels */
+    margin-top: 10px;                          /* Avstånd mellan Labels */
+}
+
+input {
+    padding: .5em;                             /* Plats i input box */
+    border: solid 1px rgb(0, 0, 0);          /* Ram */
+    border-radius: 10px;                       /* Runda hörn på input boxar */
+    accent-color: rgb(98, 65, 243);          /* Färg på checkade checkboxar */
+}
+textarea {
+    border: solid 1px rgb(0, 0, 0);          /* Svart ram */
+    min-height: 8em;                           /* Höjd textlåda */
+    min-width: 70%;                            /* Bredd textlåda */
+    padding: 5px;                              /* Utrymme */
+    border-radius: 10px;                       /* Runda hörn */
+}
+input[type="checkbox"] + label {
+    display:inline-block;                      /* Checkboxar brevid varrandra */
+}
+h3 {
+    margin: 10px 0px 10px 0px;                 /* plats ovan och under h3 */
+}
+button {                                       /* Styling för knappar */
+    margin-right: 5px;                         /* Avstånd mellan knappar  */
+    padding: 10px;                             /* Utrymme i knapp */
+    border-radius: 7px;                        /* Runda hörn */
+    border: 1px solid black;                 /* Ram */
+    transition: 250ms;                         /* Övergångstid */
+    background-color: rgb(98, 65, 243);      /* bakgrundsfärg knapp */
+    color: white;                            /* Textfärg */           
+}
+button:hover {
+    background-color: rgb(124, 99, 236);     /* ljus bakgrund vid hover */ 
+}
